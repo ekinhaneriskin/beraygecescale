@@ -1,0 +1,16 @@
+[
+  {
+    "name": "[OPEN_ENDED_QUESTION_1_NAME]",
+    "label": "[OPEN_ENDED_QUESTION_1_TEXT]",
+    "rows": 3,
+    "required": false,
+    "note": "Replace with an open-ended question approved for your study."
+  },
+  {
+    "name": "[OPEN_ENDED_QUESTION_2_NAME]",
+    "label": "[OPEN_ENDED_QUESTION_2_TEXT]",
+    "rows": 5,
+    "required": false,
+    "note": "Add or remove open-ended questions as needed."
+  }
+]

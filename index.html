@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="[LANGUAGE_CODE]"><!-- Replace with survey language code, e.g., "en" or "tr" -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>[SURVEY_TITLE] — Triangular Survey Template</title><!-- Replace with public survey title -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <button id="helpFab" class="fab" type="button" aria-label="Scale instructions" title="Scale instructions">?</button>
+
+  <main class="container">
+    <header class="card">
+      <h1 id="surveyTitle">[SURVEY_TITLE]</h1>
+      <div id="preamble" class="muted"></div>
+
+      <div class="checkline">
+        <input type="checkbox" id="consent">
+        <label for="consent" id="consentText">[CONSENT_CHECKBOX_TEXT]</label>
+      </div>
+
+      <div class="btn-bar">
+        <button class="btn" id="start" disabled>Start</button>
+        <button class="btn btn-ghost" id="reset" type="button">Reset</button>
+        <span class="muted" id="status" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <div class="sticky card">
+      <div class="progress-row">
+        <div><strong id="doneCount">0</strong>/<span id="totalCount">0</span> items marked</div>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+    </div>
+
+    <form id="form" hidden novalidate>
+      <section class="card">
+        <h2 id="demographicsHeading">[DEMOGRAPHICS_SECTION_TITLE]</h2>
+        <div id="demographicsHost" class="row"></div>
+      </section>
+
+      <section class="card">
+        <h2 id="triangleHeading">[TRIANGLE_SECTION_TITLE]</h2>
+        <p id="triangleInstructions" class="muted"></p>
+        <div id="host"></div>
+      </section>
+
+      <section id="gateNote" class="card">
+        <p class="muted center">
+          Please complete all triangular-scale items to continue.
+          <strong><span id="gateProgress">0</span>/<span id="gateTotal">0</span></strong>
+        </p>
+      </section>
+
+      <section id="pageNav" class="card">
+        <div class="gate-nav">
+          <button id="prevPage" class="btn btn-ghost" type="button" disabled>← Previous</button>
+          <div class="page-indicator"><span id="pageNow">1</span>/<span id="pageTotal">1</span></div>
+          <button id="nextPage" class="btn" type="button">Next →</button>
+        </div>
+      </section>
+
+      <div id="postSections" hidden>
+        <section class="card">
+          <h2 id="openEndedHeading">[OPEN_ENDED_SECTION_TITLE]</h2>
+          <div id="openEndedHost"></div>
+        </section>
+
+        <section class="card">
+          <div class="btn-bar">
+            <button class="btn" type="submit">Submit</button>
+            <span class="muted" id="formMsg" aria-live="polite"></span>
+          </div>
+        </section>
+
+        <section id="debrief" class="card" hidden>
+          <h3>[DEBRIEF_SECTION_TITLE]</h3>
+          <div id="debriefText"></div>
+        </section>
+      </div>
+
+      <div id="tutorial" class="tut-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="tutTitle">
+        <div class="tut-modal">
+          <div class="tut-head">
+            <strong id="tutTitle">[TUTORIAL_TITLE]</strong>
+          </div>
+          <div class="tut-body" id="tutorialBody"></div>
+          <div class="tut-footer">
+            <button id="tutOk" class="btn" type="button">I understand</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <!-- Replace this file with your own non-public or project-specific content file. -->
+  <script src="content/survey-content.template.js"></script>
+  <script src="assets/js/triangle-survey.js"></script>
+</body>
+</html>

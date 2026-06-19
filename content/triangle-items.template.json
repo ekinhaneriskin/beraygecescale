@@ -1,0 +1,12 @@
+[
+  { "id": "teacher", "label": "Teacher", "note": "Example item. Replace with your own item." },
+  { "id": "engineer", "label": "Engineer", "note": "Example item. Replace with your own item." },
+  { "id": "physician", "label": "Physician", "note": "Example item. Replace with your own item." },
+  { "id": "nurse", "label": "Nurse", "note": "Example item. Replace with your own item." },
+  { "id": "software_developer", "label": "Software Developer", "note": "Example item. Replace with your own item." },
+  { "id": "lawyer", "label": "Lawyer", "note": "Example item. Replace with your own item." },
+  { "id": "architect", "label": "Architect", "note": "Example item. Replace with your own item." },
+  { "id": "police_officer", "label": "Police Officer", "note": "Example item. Replace with your own item." },
+  { "id": "artist", "label": "Artist", "note": "Example item. Replace with your own item." },
+  { "id": "data_analyst", "label": "Data Analyst", "note": "Example item. Replace with your own item." }
+]

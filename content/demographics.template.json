@@ -1,0 +1,30 @@
+[
+  {
+    "name": "[DEMOGRAPHIC_FIELD_1_NAME]",
+    "type": "number",
+    "label": "[DEMOGRAPHIC_FIELD_1_LABEL]",
+    "min": 0,
+    "max": 120,
+    "required": true,
+    "note": "Replace with a demographic field only if approved by your ethics/privacy protocol."
+  },
+  {
+    "name": "[DEMOGRAPHIC_FIELD_2_NAME]",
+    "type": "text",
+    "label": "[DEMOGRAPHIC_FIELD_2_LABEL]",
+    "maxlength": 120,
+    "required": false,
+    "note": "Replace with optional demographic/context variable."
+  },
+  {
+    "name": "[DEMOGRAPHIC_FIELD_3_NAME]",
+    "type": "radio",
+    "label": "[DEMOGRAPHIC_FIELD_3_LABEL]",
+    "required": false,
+    "options": [
+      { "value": "[OPTION_1_VALUE]", "label": "[OPTION_1_LABEL]" },
+      { "value": "[OPTION_2_VALUE]", "label": "[OPTION_2_LABEL]" }
+    ],
+    "note": "Replace options with categories appropriate to your study."
+  }
+]
